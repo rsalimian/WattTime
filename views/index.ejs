@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<title>The Swytch.io Project!</title>
+		<meta charset="UTF-8">
+		
+		<!-- load angular via CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+		<script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+		<script src="https://code.angularjs.org/1.7.5/angular-resource.min.js"></script>
+		<script src="/assets/app.js"></script>
+		<script src="/assets/routes.js"></script>
+		<script src="/assets/services.js"></script>
+		<script src="/assets/controllers.js"></script>
+		<script src="/assets/directives.js"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div ng-view></div>
+		</div>
+	
+	</body>
+</html>

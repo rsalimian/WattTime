@@ -1,0 +1,37 @@
+<!--<watt watt-object=watt></watt>-->
+
+<div class="table-responsive">
+    <div class="col-md-12">
+        <div class="form-group">
+            <a class="btn btn-primary" href="#!/?p={{prevPage}}" >Prev</a>
+            <a class="btn btn-primary" href="#!/?p={{nextPage}}" >Next</a>
+            <!--<label for="pageLimit">Page size: <input id="pageLimit" type="text" ng-model="pageLimit" /></label>-->
+            <label>Page: {{pageNumber}}</label>
+        </div>  
+    </div>
+    
+    <table class="table">
+        
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">point_time</th>
+            <th scope="col">value</th>
+            <th scope="col">frequency</th>
+            <th scope="col">market</th>
+            <th scope="col">ba</th>
+            <th scope="col">datatype</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="griddata in griddatas">    
+                <td>{{ griddata.point_time }}</td>
+                <td>{{ griddata.value }}</td>
+                <td>{{ griddata.frequency }}</td>
+                <td>{{ griddata.market }}</td>
+                <td>{{ griddata.region.ba }}</td>
+                <td>{{ griddata.datatype.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
