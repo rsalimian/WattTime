@@ -21,7 +21,7 @@ app.use('/assets', express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 // connect to MongoDB database
-mongoose.connect(config.getDbConnectionString(), { useNewUrlParser: true });
+mongoose.connect(config.getDbConnectionString(), { useNewUrlParser: true, useUnifiedTopology: true });
 
 htmlController(app);
 apiController(app);
