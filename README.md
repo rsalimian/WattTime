@@ -29,4 +29,4 @@ stack:
 - Lambda function pullWattTimeAPIData has scheduled to run runs every day at 2 AM
 using Cloud Watch.
 
-- Lambda watch will run at 2 AM and will pulls previous dat data.
+- Lambda watch will run at 2 AM and will pulls latest data.
