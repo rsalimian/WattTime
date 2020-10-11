@@ -5,10 +5,8 @@
 var configValues = require('./config');
 
 module.exports = {
-
-    getDbConnectionString: function() {
-        return "mongodb://" + configValues.uname + ":" +
-            configValues.pwd + "@ds153495.mlab.com:53495/swytch";
+    getDbConnectionString: function () {
+        return "mongodb+srv://" + configValues.uname + ":" +
+            configValues.pwd + "@swytchcluster.ak7mj.mongodb.net/swytch?retryWrites=true&w=majority";
     }
-
 };
