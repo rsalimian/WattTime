@@ -1,8 +1,6 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-
-// load configuration file contianers MongoDB connection string
 var config = require('./config');
 
 // api controller for working with WattTime API
