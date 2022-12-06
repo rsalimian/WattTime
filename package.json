@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/rsalimian/watttime#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.10.9",
     "nodemon": "^2.0.4"
   }
